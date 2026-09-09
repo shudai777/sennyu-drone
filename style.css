@@ -1719,6 +1719,44 @@ main section {
   font-weight: 700;
 }
 
+.policy-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.2em;
+  font-size: 0.9rem;
+}
+
+.policy-body th,
+.policy-body td {
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  text-align: left;
+  color: var(--text-secondary);
+}
+
+.policy-body th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.policy-body td:last-child,
+.policy-body th:last-child {
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .policy-body table {
+    font-size: 0.82rem;
+  }
+  .policy-body th,
+  .policy-body td {
+    padding: 8px 10px;
+  }
+}
+
 .policy-contact-box {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
