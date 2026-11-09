@@ -1930,3 +1930,35 @@ main section {
     padding: 0 16px;
   }
 }
+
+/* ご依頼の流れ：各パターン最後のカードの矢印を非表示 */
+.flow-list .flow-step:last-child::after {
+  display: none;
+}
+
+/* チーム紹介の補足文 */
+.team-note {
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-top: 32px;
+}
+
+/* ロケハンとは？（テストフライト枠の下に余白を空けて配置） */
+.lochan-info {
+  margin-top: 32px;
+}
+.lochan-price {
+  text-align: center;
+  font-weight: 700;
+  margin: 16px 0;
+}
+.lochan-caution {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  text-align: left;
+  padding: 16px;
+  background: #fff4e8;
+  border-left: 4px solid var(--accent-2);
+  border-radius: 4px;
+}
