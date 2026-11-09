@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       },
       {
-        threshold: 0,
+        threshold: window.innerWidth >= 768 ? 0.2 : 0,
         rootMargin: '0px 0px -50px 0px',
       }
     );
